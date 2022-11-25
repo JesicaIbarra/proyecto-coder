@@ -1,0 +1,18 @@
+:root{
+    --color-fondo:#ebebeb;
+    --input-placeholder:#d4d4d4;
+    --input:#efefef;
+    --texto-destaque:#ffff;
+    --amarillo-destaque:#efcd0e;
+    --azul-destaque:#2a7ae4;
+    --contacto:#Eaf2fd;
+    --fuente:#787676;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--color-fondo);
+}
