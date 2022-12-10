@@ -1,0 +1,15 @@
+header{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $texto-destaque;
+
+    .img__logo{
+        width: 150px;
+        height: 100px;
+        background-size: contain;
+    }
+
+}

@@ -1,0 +1,22 @@
+.banner{
+    height: 60vh;
+    width: 100%;
+    background: url(../img/pexels-i̇sra-nilgün-özkan-14434831.jpg);
+    background-size: cover;
+    padding: 32px;
+
+    .banner__titulo{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    
+        h1{
+            font-weight: 700;
+            color: $contacto;
+            text-shadow: 0 4px 4px rgb(0 0 0 / 75%);
+        }
+    }
+
+}
+

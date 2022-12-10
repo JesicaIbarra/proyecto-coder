@@ -1,0 +1,39 @@
+.producto{
+    display: grid;
+    align-content: end;
+    background-color: var(--texto-destaque);
+    margin: 1.5vw;
+    padding: 10px;
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 5px;
+
+    a{
+        text-decoration: none;
+
+        .producto__imagen{
+            width: 100%;
+        }
+
+        .producto__nombre,.card-title , .producto__precio , .card-text {
+            font-size: 30px ;
+            color: #000;
+            font-weight: 600;
+            margin: 1rem 0;
+            text-align: center;
+            line-height: 1.2;
+
+            &:hover{
+                color:$azul-destaque;
+            }
+        
+        }
+
+        .producto__precio , .card-text{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+    }
+    
+}
+

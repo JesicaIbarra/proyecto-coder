@@ -1,0 +1,12 @@
+h2{
+    color:$fuente;
+    text-align: center;
+    padding: 30px;
+    font-weight: 700;
+}
+
+.grid{
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}

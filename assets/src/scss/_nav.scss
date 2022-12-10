@@ -1,0 +1,46 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+
+    .fa-house{
+        display: none;
+        visibility: hidden; 
+        font-size: 28px;
+        color:$azul-destaque;
+    }
+
+    .menu{
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0%;
+
+        .menu__list{
+            list-style: none;
+            margin-left: 15px;
+            padding: 10px 25px;
+            transition: 1.8s;
+        
+        &.menu__list:hover{
+            background-color:$amarillo-destaque;
+            border-radius: 10px;
+        }
+
+            .menu__list-item{
+                text-decoration: none;
+                color: $fuente;
+                font-weight: 800;
+                font-size: 18px;
+                
+            }
+
+            &.menu__list-item:hover{
+                color:$contacto;
+            }
+        }
+
+        
+    }
+    
+}
