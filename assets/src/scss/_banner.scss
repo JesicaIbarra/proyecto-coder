@@ -1,15 +1,16 @@
 .banner{
     height: 60vh;
     width: 100%;
-    background: url(../img/pexels-i̇sra-nilgün-özkan-14434831.jpg);
+    background: url(../img/home/banner/1banner.jpg);
     background-size: cover;
-    padding: 32px;
+    padding: 10px;
 
     .banner__titulo{
-        height: 300px;
+        height: 80%;
         display: flex;
+        margin-top: 10px;
         justify-content: center;
-        align-items: flex-end;
+        align-items:flex-end;
     
         h1{
             font-weight: 700;

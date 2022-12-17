@@ -1,0 +1,131 @@
+@media all and (max-width:575px){
+    header{
+        justify-content: space-evenly;
+
+        .img__logo{
+            display: flex;
+            width: 80px;
+            height: 80px;
+
+        }
+
+
+        nav{
+            justify-content: start;
+            padding-left: 20px;
+
+            .fa-house{
+                display: inline-block;
+                visibility: visible; 
+                text-align: left;
+
+                &:hover {
+
+                    +.menu{
+                        left:0;
+                    }
+                    
+                }
+            }
+
+            .menu{
+                position: fixed;
+                top:0;
+                left:-400px;
+                padding:0px;
+                flex-direction: column;
+                background-color: #000;
+                width: 70vw;
+                height: 100vh;
+                transition: 2.5s;
+
+                &:hover{
+                    left:0;
+                }
+
+                .menu__list{
+                    padding: 30px 0;
+                    text-align: center;
+                    border-bottom: 2px solid $fuente;
+                    margin:0px;
+                    transition: 2s;
+
+                    &:hover{
+                        border-radius: 0;
+                    }
+
+                }
+                
+            }
+        }
+    }
+
+    .banner{
+        background-position: center;
+       
+    }
+
+    .grid{
+        grid-template-columns: 100%;
+
+
+        .item-1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+    }
+
+    .light-box{
+        background: rgba(0, 0, 0, .5);
+        height: 200vh;
+        z-index: 1;
+        display: block;
+        
+        .producto__diponibilidad{
+            padding-top: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            height: 230px;  
+        }
+
+        img{
+            margin-left: 20vw;
+            width: 50%;
+        }
+    
+    }
+
+    .contenedor-contacto{
+        display: flex;
+        display: block;  
+        background-color: goldenrod ;
+        border: 4px solid $negro;
+
+        .mapa{
+            background-color: $negro;
+        }
+
+        .parrafo{
+            p{
+                font-size: 3vw;
+            }
+        }
+    }
+
+    .contacto{
+        fieldset{
+            display: flex;
+            display: inline-block;
+            font-size: 3.4vw;
+        }
+
+        input{
+            width: 100%;  
+        }
+        
+        textarea{
+            width: 100%;
+        }
+    }
+
+}

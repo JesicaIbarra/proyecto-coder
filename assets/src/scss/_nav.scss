@@ -6,8 +6,8 @@ nav{
     .fa-house{
         display: none;
         visibility: hidden; 
-        font-size: 28px;
-        color:$azul-destaque;
+        font-size: 24px;
+        color:$destaque;
     }
 
     .menu{
@@ -20,24 +20,32 @@ nav{
             list-style: none;
             margin-left: 15px;
             padding: 10px 25px;
-            transition: 1.8s;
+            transition: 1s;
         
-        &.menu__list:hover{
+        &:hover{
             background-color:$amarillo-destaque;
             border-radius: 10px;
+            color:$contacto;
+
         }
 
-            .menu__list-item{
+        .menu__list-item{
                 text-decoration: none;
                 color: $fuente;
                 font-weight: 800;
-                font-size: 18px;
+                font-size: 18px; 
+                text-transform:uppercase;
+                transition: 1s;
                 
+                &:hover{
+                    color:$contacto;
+                }
             }
 
-            &.menu__list-item:hover{
-                color:$contacto;
+            .destaque{
+                color:$destaque;
             }
+            
         }
 
         
