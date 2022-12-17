@@ -199,7 +199,7 @@ footer .contenedor-footer {
 }
 footer .contenedor-footer a .fa-brands {
   color: white;
-  font-size: 35px;
+  font-size: 20px;
 }
 footer .footer-licencia {
   background-color: white;
@@ -386,11 +386,21 @@ footer .footer-licencia {
     background-position: center;
   }
   .grid {
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
   }
   .grid .item-1 {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+  .grid a .producto__imagen {
+    width: 100%;
+  }
+  .grid a .producto__informacion .producto__nombre, .grid a .producto__informacion .card-title, .grid a .producto__informacion .producto__precio, .grid a .producto__informacion .card-text {
+    font-size: 16px;
+    margin: 0.6rem 0;
+  }
+  .grid a .producto__informacion .producto__precio, .grid a .producto__informacion .card-text {
+    font-size: 14px;
   }
   .light-box {
     background: rgba(0, 0, 0, 0.5);

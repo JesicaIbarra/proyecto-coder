@@ -66,12 +66,30 @@
     }
 
     .grid{
-        grid-template-columns: 100%;
-
+        grid-template-columns: 50% 50%;
 
         .item-1{
             grid-column-start: 1;
             grid-column-end: 2;
+        }
+
+        a{
+            .producto__imagen{
+                width: 100%;
+            }
+    
+            .producto__informacion{
+                    
+                .producto__nombre,.card-title , .producto__precio , .card-text {
+                    font-size: 16px ;
+                    margin: 0.6rem 0;              
+                }
+    
+                .producto__precio , .card-text{
+                    font-size: 14px;
+                }
+            }
+    
         }
     }
 
