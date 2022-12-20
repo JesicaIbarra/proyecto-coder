@@ -13,6 +13,7 @@
         nav{
             justify-content: start;
             padding-left: 20px;
+            z-index: 30;
 
             .fa-house{
                 display: inline-block;
@@ -63,6 +64,13 @@
     .banner{
         background-position: center;
        
+    }
+
+    .carousel{
+
+        .d-block{
+            height: 50vh;
+        }
     }
 
     .grid{

@@ -349,6 +349,7 @@ footer .footer-licencia {
   header nav {
     justify-content: start;
     padding-left: 20px;
+    z-index: 30;
   }
   header nav .fa-house {
     display: inline-block;
@@ -384,6 +385,9 @@ footer .footer-licencia {
   }
   .banner {
     background-position: center;
+  }
+  .carousel .d-block {
+    height: 50vh;
   }
   .grid {
     grid-template-columns: 50% 50%;
