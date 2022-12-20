@@ -7,8 +7,10 @@ header{
     background-color: $texto-destaque;
 
     .img__logo{
-        width: 15%;
-        height: 15%;
+        width: 10vw;
+        height: 10vw;
+        min-width: 80px;
+        min-height: 80px;
         background-size: contain;
     }
 

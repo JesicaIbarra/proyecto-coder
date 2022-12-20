@@ -14,8 +14,10 @@ header {
   background-color: white;
 }
 header .img__logo {
-  width: 15%;
-  height: 15%;
+  width: 10vw;
+  height: 10vw;
+  min-width: 80px;
+  min-height: 80px;
   background-size: contain;
 }
 
@@ -38,8 +40,7 @@ nav .menu {
 }
 nav .menu .menu__list {
   list-style: none;
-  margin-left: 15px;
-  padding: 10px 25px;
+  padding: 10px 20px;
   transition: 1s;
 }
 nav .menu .menu__list:hover {
@@ -290,12 +291,13 @@ footer .footer-licencia {
   background-color: #efcd0e;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 768px) {
   header {
-    height: 80px;
+    flex-direction: column;
+    height: 150px;
   }
-  header .img__logo {
-    display: none;
+  header nav {
+    order: 3;
   }
   .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -304,6 +306,9 @@ footer .footer-licencia {
   .grid .item-1 {
     grid-column-start: 2;
     grid-column-end: 4;
+  }
+  .grid a .producto__informacion .producto__nombre, .grid a .producto__informacion .card-title, .grid a .producto__informacion .producto__precio, .grid a .producto__informacion .card-text {
+    font-size: 16px;
   }
   .light-box img {
     padding-top: 40px;

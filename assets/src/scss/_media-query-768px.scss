@@ -1,10 +1,11 @@
-@media all and (max-width:900px){
+@media all and (max-width:768px){
     header{
-        height: 80px;
-
-        .img__logo{
-            display: none;
+        flex-direction: column; 
+        height: 150px;
+        nav{  
+            order: 3;
         }
+        
     }
 
     .grid{
@@ -14,6 +15,18 @@
         .item-1{
             grid-column-start: 2;
             grid-column-end: 4;
+        }
+
+        a{
+    
+            .producto__informacion{
+                    
+                .producto__nombre,.card-title , .producto__precio , .card-text {
+                    font-size: 16px ;
+                                 
+                }
+            }
+    
         }
     }
     
