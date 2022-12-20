@@ -1,11 +1,10 @@
 @media all and (max-width:768px){
     header{
-        flex-direction: column; 
-        height: 150px;
-        nav{  
-            order: 3;
+        height: 80px;
+
+        .img__logo{
+            display: none;
         }
-        
     }
 
     .grid{
