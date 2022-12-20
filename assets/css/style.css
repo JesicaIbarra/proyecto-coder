@@ -91,7 +91,7 @@ h2 {
 
 .grid {
   display: inline-grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 10px;
 }
 
@@ -210,7 +210,7 @@ footer .footer-licencia {
 }
 
 .carousel .d-block {
-  height: 39vw;
+  height: 80vh;
   padding: 10px;
 }
 .carousel .d-block .tres {
