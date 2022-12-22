@@ -425,7 +425,7 @@ footer .footer-licencia {
     height: 40vh;
     width: 100vw;
     background: url(../img/calzados/banner1.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .carousel .d-block {
