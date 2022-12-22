@@ -36,7 +36,7 @@
         display: flex;
         margin-top: 10px;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         
 
         .banner__titulo-calzado{
@@ -44,7 +44,7 @@
             font-size: 6vw;
             text-align: center;
             text-shadow: 0 4px 4px rgba(228, 118, 8, 0.75);
-            line-height: 1.5;
+            line-height: 1.6;
             color: $texto-destaque;
         }
     }

@@ -98,14 +98,14 @@ nav .menu .menu__list .destaque {
   display: flex;
   margin-top: 10px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .banner__calzado .banner-contenedor__titulo-calzado .banner__titulo-calzado {
   font-weight: 700;
   font-size: 6vw;
   text-align: center;
   text-shadow: 0 4px 4px rgba(228, 118, 8, 0.75);
-  line-height: 1.5;
+  line-height: 1.6;
   color: white;
 }
 
@@ -368,7 +368,8 @@ footer .footer-licencia {
     font-size: 16px;
   }
   .banner__calzado {
-    background-size: contain;
+    background-size: cover;
+    background-position: right center;
   }
 }
 @media all and (max-width: 575px) {
@@ -417,8 +418,14 @@ footer .footer-licencia {
   header nav .menu .menu__list:hover {
     border-radius: 0;
   }
-  .banner {
+  .banner .banner__calzados {
     background-position: center;
+  }
+  .banner__calzado {
+    height: 50vw;
+    background: url(../img/calzados/banner1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .carousel .d-block {
     height: 50vh;
