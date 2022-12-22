@@ -16,7 +16,7 @@ footer{
            
             .fa-brands{
                 color:$texto-destaque;
-                font-size: 20px;
+                font-size: 30px;
             }
         }
 
@@ -25,8 +25,9 @@ footer{
 
     .footer-licencia{
         background-color: $texto-destaque;
+        font-size: 18px;
         text-align: center;
-        font-weight:700;
+        font-weight:500;
         color:$negro;
         padding:5px 0;
     }
