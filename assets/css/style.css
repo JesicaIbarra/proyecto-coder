@@ -422,9 +422,10 @@ footer .footer-licencia {
     background-position: center;
   }
   .banner__calzado {
-    height: 50vw;
+    height: 40vh;
+    width: 100vw;
     background: url(../img/calzados/banner1.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .carousel .d-block {
