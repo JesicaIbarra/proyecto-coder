@@ -24,11 +24,17 @@
 .banner__calzado{
     height: 70vh;
     width: 100%;
-    background: url(../img/calzados/banner.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color:$negro;
+
+    .banner__calzado-fondo{
+        width: 100%;
+        background: url(../img/calzados/banner.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding: 10px;
 
     .banner-contenedor__titulo-calzado{
         width: 50%;
@@ -48,5 +54,8 @@
             color: $texto-destaque;
         }
     }
+
+    }
+    
 }
 

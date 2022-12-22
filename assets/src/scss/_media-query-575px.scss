@@ -61,17 +61,18 @@
         }
     }
 
-    .banner  .banner__calzados{
+    .banner{
         background-position: center;
        
     }
 
-    .banner__calzado{
+    .banner__calzado-fondo{
         height: 40vh;
         width: 100vw;
         background: url(../img/calzados/banner1.png);
         background-size:contain;
         background-repeat: no-repeat;
+        background-position: left;
     }
     
 

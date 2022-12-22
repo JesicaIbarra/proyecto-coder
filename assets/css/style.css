@@ -86,13 +86,19 @@ nav .menu .menu__list .destaque {
 .banner__calzado {
   height: 70vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+}
+.banner__calzado .banner__calzado-fondo {
+  width: 100%;
   background: url(../img/calzados/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
   padding: 10px;
 }
-.banner__calzado .banner-contenedor__titulo-calzado {
+.banner__calzado .banner__calzado-fondo .banner-contenedor__titulo-calzado {
   width: 50%;
   height: 100%;
   display: flex;
@@ -100,7 +106,7 @@ nav .menu .menu__list .destaque {
   justify-content: center;
   align-items: flex-start;
 }
-.banner__calzado .banner-contenedor__titulo-calzado .banner__titulo-calzado {
+.banner__calzado .banner__calzado-fondo .banner-contenedor__titulo-calzado .banner__titulo-calzado {
   font-weight: 700;
   font-size: 6vw;
   text-align: center;
@@ -368,7 +374,7 @@ footer .footer-licencia {
     font-size: 16px;
   }
   .banner__calzado {
-    background-size: cover;
+    background-size: contain;
     background-position: right center;
   }
 }
@@ -418,15 +424,16 @@ footer .footer-licencia {
   header nav .menu .menu__list:hover {
     border-radius: 0;
   }
-  .banner .banner__calzados {
+  .banner {
     background-position: center;
   }
-  .banner__calzado {
+  .banner__calzado-fondo {
     height: 40vh;
     width: 100vw;
     background: url(../img/calzados/banner1.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: left;
   }
   .carousel .d-block {
     height: 50vh;
