@@ -47,8 +47,8 @@
 
     .contenedor-contacto{
         display: flex;
-        background-color: goldenrod ;
-        border: 4px solid $negro;
+        background-color: $negro ;
+        border: 4px solid $destaque;
         margin-bottom: 10px;
 
         .mapa{

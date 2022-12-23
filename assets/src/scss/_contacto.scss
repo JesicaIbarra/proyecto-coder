@@ -1,11 +1,12 @@
 .contenedor-contacto{
-    display: grid;
-    grid-template-columns: 50% 45%;
-    background-color:$color-fondo;
-    border: 1px solid rgb(207, 205, 205);
-    grid-gap: 4px;
+    display: flex;
+    background-color:$negro;
+    border: 2px solid $destaque;
     justify-content: space-evenly;
     margin-bottom: 10px;
+    align-items: center;
+    padding:10px;
+    height: 70vh;
 
     .mapa{
         margin: 4px;
@@ -13,60 +14,99 @@
     }
 
     .parrafo{
+        display: flex;
+        flex-direction: column;     
+        width:99%;
         padding-top: 10px;
         text-align: center;
-        align-content: center;
+        align-items: center;
         color: $fuente;
 
         h3 {
-            color: $texto-destaque;
+            color: $destaque;
             font-weight: bold;
-            padding: 20px 0;
+            font-size: 20px;
+            text-transform: uppercase;
         }
 
-        p{
-            font-weight:bold;
-            font-size: 1.5vw;
-            
+        .persona{
+            background-image: url(../img/contacto/foto.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 200px;
+            height:200px;
+            border-radius: 100%;
+
         }
+
+        .contenedor__parrafo{
+            width: 70%;
+            padding: 10px;
+
+            p{
+                font-size: 1.5vw;
+                color: $texto-destaque;
+                
+            }
+
+
+        }
+       
     }
 }
 
 .contacto{
-        color:$amarillo-destaque;
+        color:$fuente;
         text-align: center;
         font-weight: bold;
     }
 
     .formulari-contacto{ 
-        margin: 5px;
+        margin: 2px;
         background-color:$texto-destaque;
-        width: 100%;
+        width: calc(100% - 4px);
 
         fieldset{
+            display: flex;
+            flex-wrap: wrap;
             border: 2px solid $input;
-            background-color: $contacto;
+            background-color: rgba(250, 146, 1, 0.295);
             padding: 20px;
-            display: grid;
             color: $fuente;
             font-weight: bold;
-            grid-template-columns: 35% 65%;
+
+            label{
+                width: 30%;
+                padding: 10px;
+            }
 
             input{
-                grid-column-start: 2;
-                grid-column-end: 3;
+                margin-bottom: 10px;
+                width: 60%;
+                padding:10px 5px;
+                
+            }
+
+            textarea{
+                padding:10px 5px;
+                width: 60%;
             }
 
             #Boton{
                 font-weight: bold;
-                color: $fuente;
+                background-color:$negro;
+                color: $destaque;
                 margin-top: 15px; 
-                border: 1px solid $amarillo-destaque;
-                transition: .5s;
+                padding: 15px 0px;
+                border: 1px solid $negro;
+                transition: 1s;
+                border-radius: 10px;
 
                 &:hover{
-                    color: $contacto;
-                    background-color:$amarillo-destaque;
+                    transform: scale(1.05);
+                    border: 2px solid $destaque;
+                    background-color:$negro;
                 }
             }
         }
