@@ -21,20 +21,19 @@
 
 }
 
-.banner__calzado{
-    height: 70vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color:$negro;
-
-    .banner__calzado-fondo{
+ .banner__calzado{
+        height: 70vh;
         width: 100%;
-        background: url(../img/calzados/banner.png);
+        background: url(../img/calzados/baner-base.png);
         background-size:cover;
         background-repeat: no-repeat;
-        background-position: left center;
+        background-position:center;
         padding: 10px;
+        display: flex;
+
+        img{
+            width: 50%;
+        }
 
     .banner-contenedor__titulo-calzado{
         width: 50%;
@@ -47,13 +46,13 @@
 
         .banner__titulo-calzado{
             font-weight: 700;
-            font-size: 6vw;
+            font-size: 5vw;
             text-align: center;
             text-shadow: 0 4px 4px rgba(228, 118, 8, 0.75);
             line-height: 1.6;
             color: $texto-destaque;
         }
-    }
+    
 
     }
     
