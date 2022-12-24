@@ -106,14 +106,15 @@
         }
     }
 
-    article{
+   .light-box {
         background: rgba(0, 0, 0, .5);
         height: 200vh;
         z-index: 1;
         display: block;
 
         img{
-            width: 100%;
+            margin-left: 20vw;
+            
         }
         
         .producto__diponibilidad{
