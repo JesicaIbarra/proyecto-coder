@@ -6,11 +6,15 @@
     margin-bottom: 10px;
     align-items: center;
     padding:10px;
-    height: 70vh;
 
     .mapa{
         margin: 4px;
+        width: 90%;
         text-align: center;
+
+        iframe{
+            width: 100%;
+        }
     }
 
     .parrafo{
