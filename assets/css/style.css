@@ -113,6 +113,16 @@ nav .menu .menu__list .destaque {
   color: white;
 }
 
+.carousel .d-block {
+  height: 80vh;
+  padding: 10px;
+}
+.carousel .d-block .tres {
+  background: url(../img/imagen-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 h2 {
   color: #787676;
   text-align: center;
@@ -149,8 +159,9 @@ h2 {
   background-color: #efefef;
   padding: 10px 0px;
 }
-.producto a .producto__informacion .producto__nombre, .producto a .producto__informacion .card-title, .producto a .producto__informacion .producto__precio, .producto a .producto__informacion .card-text {
-  font-size: 30px;
+.producto a .producto__informacion .producto__nombre, .producto a .producto__informacion .producto__precio {
+  font-size: 2.5vw;
+  font-size: 20px;
   color: #787676;
   font-weight: 600;
   margin: 1rem 0;
@@ -162,7 +173,7 @@ h2 {
   font-weight: 700;
 }
 
-.light-box {
+article {
   position: fixed;
   top: 0;
   left: 0;
@@ -176,10 +187,15 @@ h2 {
   align-items: center;
   transform: scale(0);
 }
-.light-box:target {
+article img {
+  width: 50%;
+  padding-top: 0;
+  margin-left: 10vw;
+}
+article:target {
   transform: scale(1);
 }
-.light-box .close {
+article .close {
   display: block;
   position: absolute;
   top: 40px;
@@ -194,23 +210,17 @@ h2 {
   line-height: 40px;
   border-radius: 50%;
 }
-.light-box img {
-  width: 30%;
-  padding-top: 0;
-  margin-left: 20vw;
-}
-.light-box .producto__diponibilidad {
+article .producto__diponibilidad {
   display: block;
   padding-top: 3px;
   margin-bottom: 20px;
   background-color: #000000;
   width: 100%;
-  height: 300px;
   text-align: center;
   flex-grow: 1;
   max-height: 280px;
 }
-.light-box .producto__diponibilidad h2 {
+article .producto__diponibilidad h2 {
   color: #Eaf2fd;
 }
 
@@ -239,22 +249,6 @@ footer .footer-licencia {
   font-weight: 500;
   color: #000000;
   padding: 5px 0;
-}
-
-.carousel .d-block {
-  height: 80vh;
-  padding: 10px;
-}
-.carousel .d-block .tres {
-  background: url(../img/imagen-4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.contenedor__card {
-  width: 90%;
-  margin: auto;
-  padding-bottom: 10px;
 }
 
 .contenedor-contacto {
@@ -353,61 +347,6 @@ footer .footer-licencia {
   background-color: #000000;
 }
 
-@media all and (max-width: 768px) {
-  header {
-    height: 80px;
-  }
-  header .img__logo {
-    display: none;
-  }
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-  }
-  .grid .item-1 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-  .grid a .producto__informacion .producto__nombre, .grid a .producto__informacion .card-title, .grid a .producto__informacion .producto__precio, .grid a .producto__informacion .card-text {
-    font-size: 16px;
-  }
-  .light-box img {
-    padding-top: 40px;
-    margin-left: 20vw;
-    width: 35%;
-  }
-  .light-box .producto__diponibilidad {
-    padding-top: 3px;
-    margin-bottom: 15px;
-    height: 230px;
-  }
-  .contenedor-contacto {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .contenedor-contacto .mapa {
-    margin: 4px;
-    background-color: #000000;
-    width: 100%;
-  }
-  .contenedor-contacto .mapa iframe {
-    width: 100%;
-  }
-  .contenedor-contacto .parrafo .contenedor__parrafo p {
-    font-size: 3vw;
-  }
-  fieldset {
-    font-size: 2.5vw;
-  }
-  footer a .fa-brands {
-    color: white;
-    font-size: 16px;
-  }
-  .banner__calzado {
-    height: 40vh;
-  }
-}
 @media all and (max-width: 575px) {
   header {
     justify-content: space-evenly;
@@ -480,21 +419,20 @@ footer .footer-licencia {
   .grid a .producto__informacion .producto__precio, .grid a .producto__informacion .card-text {
     font-size: 14px;
   }
-  .light-box {
+  article {
     background: rgba(0, 0, 0, 0.5);
     height: 200vh;
     z-index: 1;
     display: block;
   }
-  .light-box .producto__diponibilidad {
+  article img {
+    width: 100%;
+  }
+  article .producto__diponibilidad {
     padding-top: 10px;
     margin-bottom: 15px;
     width: 100%;
     height: 230px;
-  }
-  .light-box img {
-    margin-left: 20vw;
-    width: 50%;
   }
   .contenedor-contacto {
     display: flex;
@@ -525,5 +463,60 @@ footer .footer-licencia {
   }
   .contacto fieldset textarea {
     width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  header {
+    height: 80px;
+  }
+  header .img__logo {
+    display: none;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+  .grid .item-1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .grid a .producto__informacion .producto__nombre, .grid a .producto__informacion .producto__precio {
+    font-size: 16px;
+  }
+  .light-box img {
+    padding-top: 40px;
+    margin-left: 5vw;
+    width: 40%;
+  }
+  .light-box .producto__diponibilidad {
+    padding-top: 3px;
+    margin-bottom: 15px;
+    height: 230px;
+  }
+  .contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .contenedor-contacto .mapa {
+    margin: 4px;
+    background-color: #000000;
+    width: 100%;
+  }
+  .contenedor-contacto .mapa iframe {
+    width: 100%;
+  }
+  .contenedor-contacto .parrafo .contenedor__parrafo p {
+    font-size: 3vw;
+  }
+  fieldset {
+    font-size: 2.5vw;
+  }
+  footer a .fa-brands {
+    color: white;
+    font-size: 16px;
+  }
+  .banner__calzado {
+    height: 40vh;
   }
 }

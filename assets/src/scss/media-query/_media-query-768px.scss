@@ -17,27 +17,25 @@
         }
 
         a{
-    
             .producto__informacion{
                     
-                .producto__nombre,.card-title , .producto__precio , .card-text {
-                    font-size: 16px ;
-                                 
+                .producto__nombre, .producto__precio{
+                    font-size: 16px ;             
                 }
             }
     
         }
     }
     
-    .light-box {
+    .light-box{
 
         img{
             padding-top: 40px;
-            margin-left: 20vw;
-            width: 35%; 
+            margin-left: 5vw;
+            width: 40%; 
         }
 
-        .producto__diponibilidad{
+       .producto__diponibilidad{
             padding-top: 3px;
             margin-bottom: 15px;
             height: 230px;   
