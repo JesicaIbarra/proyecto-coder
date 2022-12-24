@@ -259,10 +259,11 @@ footer .footer-licencia {
   margin-bottom: 10px;
   align-items: center;
   padding: 10px;
+  height: 100vh;
 }
 .contenedor-contacto .mapa {
   margin: 4px;
-  width: 90%;
+  width: 80%;
   text-align: center;
 }
 .contenedor-contacto .mapa iframe {
